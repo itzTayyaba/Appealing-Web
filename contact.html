@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Luxury Interiors Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x icon" href="images/logo.jpeg">
+
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="logo-title">
+      <img src="images/logo.jpeg" class="logo" />
+      <h2>LUXURY DESIGNS</h2>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <div class="contact-page">
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form action="mailto:tayyabaismail02@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required />
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      
+        <button type="submit"><span></span>Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

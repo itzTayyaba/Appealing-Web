@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reviews - Luxury Interiors Website</title>
+  <link rel="icon" type="image/x icon" href="images/logo.jpeg">
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #000;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .navbar {
+      width: 89%;
+      margin: auto;
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: larger;
+      color: white;
+    }
+
+    .logo {
+      width: 100px;
+      cursor: pointer;
+      border-radius: 80px;
+    }
+
+    div.navbar h2 {
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: oblique;
+      color: white;
+      text-shadow: 1px 1px 1px #000, 3px 3px 5px #467e78;
+      float: left;
+      cursor: pointer;
+    }
+
+    div.navbar h2:hover {
+      color: #009688;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+      position: relative;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    .navbar ul li::after {
+      content: '';
+      height: 3px;
+      width: 0%;
+      background: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+      width: 100%;
+    }
+
+    .reviews-section {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .reviews-section h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 1px #000, 3px 3px 5px #467e78;
+    }
+
+    .review {
+      max-width: 800px;
+      margin: 40px auto;
+      padding-left: 20px;
+      border-left: 4px solid #009688;
+      text-align: left;
+    }
+
+    .review p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .review .name {
+      font-weight: bold;
+      color: #009688;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="images/logo.jpeg" class="logo" />
+      <h2>LUXURY DESIGNS</h2>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h1>Client Reviews</h1>
+
+    <div class="review">
+      <p>"Luxury Designs completely transformed my home. Their work was elegant, modern, and done professionally!"</p>
+      <p class="name">— Sarah Ahmed</p>
+    </div>
+
+    <div class="review">
+      <p>"I was amazed at the creativity and attention to detail. The team was very responsive to feedback."</p>
+      <p class="name">— Hamza Raza</p>
+    </div>
+
+    <div class="review">
+      <p>"From planning to execution, every step was smooth. I'm in love with my new interior look!"</p>
+      <p class="name">— Ayesha Malik</p>
+    </div>
+  </section>
+
+</body>
+</html>
